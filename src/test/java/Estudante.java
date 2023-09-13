@@ -1,13 +1,11 @@
 public class Estudante{
   public String nome;
   public int matricula;
-  private float nota1;  
-  private float nota2;
-  private float nota3;
-  private float media;
+  private double nota1, nota2, nota3;  
+  private double media;
 
 
-  public Estudante(String nome, int matricula, float nota1, float nota2, float nota3){
+  public Estudante(String nome, int matricula, double nota1, double nota2, double nota3){
     this.nome = nome;
     this.matricula = matricula;
     this.nota1 = nota1;
@@ -23,21 +21,21 @@ public class Estudante{
     return matricula;
   }
 
-  public void setNota1(float nota1){
+  public void setNota1(double nota1){
     this.nota1 = nota1;
   }
 
-  public void setNota2(float nota2){
+  public void setNota2(double nota2){
     this.nota2 = nota2;
   }
 
-  public void setNota3(float nota3){
+  public void setNota3(double nota3){
     this.nota3 = nota3;
   }
 
   public void mediaAluno(){
-    if (nota1 >= 0.0f && nota1 <= 10.0f && nota2 >= 0.0f && nota2 <= 10.0f && nota3 >= 0.0f && nota3 <= 10.0f){
-      media = (nota1 + nota2 + nota3)/3.0f;
+    if (nota1 >= 0.0 && nota1 <= 10.0 && nota2 >= 0.0 && nota2 <= 10.0 && nota3 >= 0.0 && nota3 <= 10.0){
+      media = (nota1 + nota2 + nota3)/3.0;
     }  
   }
 
@@ -50,7 +48,7 @@ public class Estudante{
   }
 
   public static void main(String[] args) {
-    Estudante estudante1 = new Estudante("Maria", 202020, 7.5f, 8.0f, 9.0f);
+    Estudante estudante1 = new Estudante("Maria", 202020, 7.5, 8.0, 9.0);
     estudante1.mediaAluno();
     estudante1.verificarMedia();
     System.out.println(estudante1.getNome());
@@ -61,4 +59,3 @@ public class Estudante{
   }
 
 }
-
