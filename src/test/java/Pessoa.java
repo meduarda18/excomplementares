@@ -35,6 +35,9 @@ public class Pessoa {
 
   public static void main(String[] args) {
     Pessoa pessoa1 = new Pessoa("Maria", 18, "Rua João");
-    System.out.println(pessoa1);
+    System.out.println(pessoa1.nome);
+    System.out.println(pessoa1.idade);    
+    System.out.println(pessoa1.endereco);
+
   }
 }
