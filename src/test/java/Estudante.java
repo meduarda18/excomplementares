@@ -52,9 +52,11 @@ public class Estudante{
   public static void main(String[] args) {
     Estudante estudante1 = new Estudante("Maria", 202020, 7.5f, 8.0f, 9.0f);
     estudante1.mediaAluno();
+    estudante1.verificarMedia();
     System.out.println(estudante1.getNome());
     System.out.println(estudante1.getMatricula());    
-    System.out.printf("%.2f", estudante1.media);
+    System.out.printf("%.2f\n", estudante1.media);
+    System.out.println(estudante1.verificarMedia());
 
   }
 
